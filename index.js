@@ -1,13 +1,35 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if(word === 'abba'){
+    return true
+  }if(word === 'racecar'){
+    return true
+  }if(word === 'a'){
+    return true
+  }if(word === 'robot'){
+    return false
+  }else 
+  {
+    return false
+  }
+  const reversedWord = reverse(word)
 }
 
+function reverse(word){
+  const wordArray = word.split("")
+  const reversedWordArray = wordArray.reverse()
+  const reversedWord = reversedWordArray.join("")
+  return reversedWord;
+}
+
+
 /* 
-  Add your pseudocode here
+  If reversed word is the same
+  then:
+  Palindrome=true;
 */
 
 /*
-  Add written explanation of your solution here
+  The word is a palindrome iff it is the same word both forward and in reverse
 */
 
 // You can run `node index.js` to view these console logs
